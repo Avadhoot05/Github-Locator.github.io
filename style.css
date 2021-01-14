@@ -218,11 +218,11 @@ a.button:hover{
   }
 
   input:checked + .slider {
-    background-color: #ffe56f;
+    background-color:rgb(10, 255, 222);
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #ffe56f;
+    box-shadow: 0 0 1px rgb(10, 255, 222);
   }
 
   input:checked + .slider:before {
@@ -259,7 +259,60 @@ a.button:hover{
         margin-top: 1rem;
     }
 
+}
 
 
+@media screen and (max-width:380px){
+    h1{
+        font-size: 7.5vw;
+        top:6px;
+    }
 
+    #form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form button{
+    margin-left: 0;
+    }
+
+    .switch {
+        width: 27px;
+        height: 16px;
+      }
+    
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 5px;
+      }
+    
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 3px;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(12px);
+      }
+
+
+      #search{
+          margin-bottom: 1rem;
+      }
 }

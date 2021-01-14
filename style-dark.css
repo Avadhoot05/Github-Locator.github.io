@@ -22,12 +22,12 @@
 }
 
 .user-info {
-    color: rgb(10, 255, 222);
+    color: white;
 }
 
 
 .repo {
-    background-color:rgb(233, 156, 248);
+    background-color:rgb(10, 255, 222);/*rgb(233, 156, 248);*/
     border: 1px solid rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 

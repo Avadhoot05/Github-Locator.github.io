@@ -126,11 +126,11 @@ function Hellodarkness(){
         else{
             console.log("make it Dark");
             bd.style.background = "rgb(54, 54, 54)";
-            title.style.color="rgb(212, 100, 235)";
+            title.style.color="rgb(10, 255, 222)";//rgb(212, 100, 235)";
             search.style.color = "white";
             but.style.color = "white";
-            search.style.background= "rgb(236, 142, 255)";
-            but.style.border="1px solid rgb(212, 100, 235)"; 
+            search.style.background= "rgb(10, 255, 222)";//"rgb(236, 142, 255)";
+            but.style.border="1px solid rgb(10, 255, 222)";//rgb(212, 100, 235)"; 
 
             
             let link  = document.createElement('link');
