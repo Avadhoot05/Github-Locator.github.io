@@ -1,1 +1,1 @@
-# Github-Locator.github.io
+# Github-Locator

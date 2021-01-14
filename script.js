@@ -145,7 +145,7 @@ function Hellodarkness(){
     });
 }
 
-// Hellodarkness();
+Hellodarkness();
 
 
 
