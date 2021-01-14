@@ -236,17 +236,30 @@ a.button:hover{
         top:6px;
     }
 
+    .user-info{
+        margin-left: 0;
+    }
+
+    .card{
+        flex-direction: column;
+        width: 70vw ;
+    }
+
     .user-info li, 
     .user-info ul li strong {
         font-size: 2.5vw;
         margin: 0px 3px;
     }
 
-
-
     .avatardiv{
-        padding: 5rem 0px;
+        padding: 2rem 0px;
     }
+
+    .avatardiv .button{
+        margin-top: 1rem;
+    }
+
+
 
 
 }
