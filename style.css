@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #b3ffab, #12fff7); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1{
+    color: white;
+    font-size: 4vw;
+    position: relative;
+    top: 6x;
+}
+
+
+
+.nfm{
+    color: rgb(255, 108, 108);
+    font-size: 3rem; 
+}
+
+#search {
+    background-color: #4c288500;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 0px rgba(154, 160, 185, 0.05), 0 10px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+#search::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+
+#form{
+    position: relative;
+    top:2vh;
+}
+
+form button{
+    /* background-color:rgb(236, 142, 255);  */
+    background-color: #4c288500;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0rem 0rem 2rem 2rem;
+
+}
+
+form button:hover{
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.02),0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+form button:focus,input:focus {
+    outline: none;
+}
+
+.card {
+    background-color: #ececec;
+    border-radius: 20px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    max-width: 800px;
+}
+
+.avatardiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatardiv button{
+    border: none;
+    outline: none;
+    background-color: rgb(255, 91, 154);;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    margin: 1rem 0rem 0rem 0rem;   
+}
+
+
+.avatardiv button:hover,
+.avatardiv button:focus{
+    background-color: rgb(194, 0, 74);;
+}
+
+
+
+.avatar {
+    border: 10px solid black;
+    border-radius: 20%;
+    border-top: 0px;
+    border-bottom: 0px;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: rgb(0, 0, 0);
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    background-color:#befffa;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: rgb(228, 60, 110);
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    color: rgb(255, 255, 255);
+    border-radius: 20%;
+}
+
+a.button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+
+/*Dark Mode Switch*/
+.switch {
+    position: absolute;
+    top:30px;
+    right:30px;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 10px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 10px;
+  }
+
+  input:checked + .slider {
+    background-color: #ffe56f;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ffe56f;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+ 
+  @media screen and (max-width:550px){
+    h1{
+        font-size: 7.5vw;
+        top:6px;
+    }
+
+    .user-info li, 
+    .user-info ul li strong {
+        font-size: 2.5vw;
+        margin: 0px 3px;
+    }
+
+
+
+    .avatardiv{
+        padding: 5rem 0px;
+    }
+
+
+}
