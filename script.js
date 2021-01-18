@@ -1,4 +1,4 @@
-const APIURL = "https://api.github.com/users/";
+const url = "https://api.github.com/users/";
 
 
 let head = document.getElementsByTagName("Head")[0];
@@ -13,7 +13,7 @@ let darkModeSwitch = document.querySelector(".slider");
 
 
 async function getUser(username) {
-    const resp = await fetch(APIURL + username);
+    const resp = await fetch(url + username);
     const respData = await resp.json();
     console.log(respData);
 
@@ -34,7 +34,7 @@ async function getUser(username) {
 
 
 async function getRepos(username) {
-    const resp = await fetch(APIURL + username + "/repos");
+    const resp = await fetch(url + username + "/repos");
     const respData = await resp.json();
 
     addReposToCard(respData);
@@ -70,7 +70,6 @@ function createUserCard(user) {
         </div>
         `
     ;
-
 
 
     main.innerHTML = cardHTML;
